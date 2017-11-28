@@ -122,7 +122,6 @@ int SetConfigFile(int devfd, char *cfgdir)
 	}
 	printCfgFile(cfgFile);
 	SetCfgPara(devfd, SYSDIR, cfgFile);
-	free(cfgFile);
 err:
 	if (cfgFile)
 		free(cfgFile);
